@@ -6,8 +6,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" src="/app/css/index.css">
-  <link rel="stylesheet" href="/app/css/login.css">
+  <link rel="stylesheet" href="/src/app/css/index.css">
+  <link rel="stylesheet" href="/src/css/login.css">
   <link rel="stylesheet" href="/app/css/registro.css">
   <link rel="stylesheet" href="/app/css/datosusuario.css">
   <link rel="stylesheet" href="/app/css/publicarProductos.css">
