@@ -1,7 +1,7 @@
 <?php 
 // include_once "/Exchangecity/funciones/conexionDB.php";
-include_once "exchangecity/Includes/header.php";
-include_once "/exchangecity/Includes/menulateral.php";
+include_once "app/Includes/header.php";
+include_once "/app/Includes/menulateral.php";
 //include_once "/Exchangecity/funciones/masFunciones.php";
 
 ?>
