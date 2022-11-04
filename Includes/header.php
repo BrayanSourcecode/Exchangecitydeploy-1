@@ -6,16 +6,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/exchangecity/PROYECTOSENA/css/index.css">
-  <link rel="stylesheet" href="/exchangecity/PROYECTOSENA/css/login.css">
-  <link rel="stylesheet" href="/exchangecity/PROYECTOSENA/css/registro.css">
-  <link rel="stylesheet" href="/exchangecity/proyectoSena/css/datosusuario.css">
-  <link rel="stylesheet" href="/exchangecity/proyectoSena/css/publicarProductos.css">
-  <link rel="stylesheet" href="/exchangecity/proyectoSena/css/editarPublicacion.css">
-  <link rel="stylesheet" href="/exchangecity/proyectoSena/css/descripcion.css">
-  <link rel="stylesheet" href="/exchangecity/proyectoSena/css/intercambio/crearIntercambio.css">
-  <link rel="stylesheet" href="/exchangecity/proyectoSena/css/avisoEliminacion.css">
-  <link rel="stylesheet" href="/exchangecity/proyectoSena/css/crudUsuario.css">
+  <link rel="stylesheet" href="/app/css/index.css">
+  <link rel="stylesheet" href="/app/css/login.css">
+  <link rel="stylesheet" href="/app/css/registro.css">
+  <link rel="stylesheet" href="/app/css/datosusuario.css">
+  <link rel="stylesheet" href="/app/css/publicarProductos.css">
+  <link rel="stylesheet" href="/app/css/editarPublicacion.css">
+  <link rel="stylesheet" href="/app/css/descripcion.css">
+  <link rel="stylesheet" href="/app/css/intercambio/crearIntercambio.css">
+  <link rel="stylesheet" href="/app/css/avisoEliminacion.css">
+  <link rel="stylesheet" href="/app/css/crudUsuario.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
  
   <title>Contenido</title>
