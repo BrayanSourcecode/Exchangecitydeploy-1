@@ -1,8 +1,8 @@
 <?php 
-include_once "/wamp64/www/Exchangecity/proyectoSena/funciones/conexionDB.php";
-include_once "/wamp64/www/exchangecity/proyectoSena/Includes/header.php";
-include_once "/wamp64/www/exchangecity/proyectoSena/Includes/menulateral.php";
-include_once "/wamp64/www/Exchangecity/proyectoSena/funciones/masFunciones.php";
+include_once "/Exchangecity/funciones/conexionDB.php";
+include_once "/exchangecity/Includes/header.php";
+include_once "/exchangecity/Includes/menulateral.php";
+include_once "/Exchangecity/funciones/masFunciones.php";
 
 ?>
  
@@ -46,7 +46,7 @@ include_once "/wamp64/www/Exchangecity/proyectoSena/funciones/masFunciones.php";
           <a class="pagi"href="/PROYECTOSENA/paginacion/paginacion5.php">5</a>
       </div>
     </div> -->
-  <?php include_once "/wamp64/www/Exchangecity/proyectoSena/Includes/acount.php";
+  <?php include_once "/Exchangecity/Includes/acount.php";
     unset($_SESSION["intercambio_eliminado"]);
     unset($_SESSION["intercambio_finalizado"]);
     
@@ -59,5 +59,5 @@ include_once "/wamp64/www/Exchangecity/proyectoSena/funciones/masFunciones.php";
 
 
   <?php 
-  include_once "/wamp64/www/exchangecity/proyectoSena/Includes/footer.php"
+  include_once "/exchangecity/Includes/footer.php"
   ?>
