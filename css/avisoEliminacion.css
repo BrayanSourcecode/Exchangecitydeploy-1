@@ -1,0 +1,24 @@
+.avisoEliminacion{
+    width: 40rem;
+    height: 15rem;
+    /* background: linear-gradient(20deg ,black 40% , grey,black ); */
+    border: 3px solid var(--logo);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.1rem;
+    border-radius: 1rem;
+}
+
+.avisoEliminacion h4{
+    color: red;
+}
+
+.confirmar_cancelar{
+    margin-top:2rem ;
+    width: 100%;
+    display: flex;
+justify-content: space-around;
+
+}

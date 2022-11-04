@@ -1,0 +1,433 @@
+/* estilos generales de toda la pagina */
+
+*{
+  margin: 0;  
+  padding: 0;
+  
+}
+
+/* estilos del body */
+body{
+
+  background-color: #181c1f;
+  
+}
+body a{
+  color: white;
+}
+:root{
+  --letra: #b4b4b4;
+  --logo:#10d078;
+  --cars:#323a40;
+
+}
+/*estilos header*/
+header{
+  position: absolute;
+  z-index: 2;
+  width: 95%;
+  margin-left: 5%;
+  height: 3rem;
+  display: flex;
+  flex-direction: row;
+ 
+}
+.logo{
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 40%;
+  gap: 3rem;
+  
+}
+.logo span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo a{
+  width: 17.5%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+.iconoLogo{
+  width: 2rem;
+  height: 2rem;
+  color: var(--logo);
+  border: 2px solid white;
+  border-radius: 1rem 0.3rem 1rem;
+  
+}
+.iniciarSesion{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+  gap: 8rem;
+  margin-right: 7rem;
+  
+}
+.bienvenido{
+  width: 18rem;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+
+}
+.iniciarSesion h3{
+  color: white;
+  border-bottom: 0.1rem solid var(--logo);
+
+  
+}
+.iniciarSesion  .buscador {
+  width: 20rem;
+  height: 1.5rem;
+  border: 0;
+  border-bottom: 1px solid var(--logo);
+  background: inherit;
+  color: white;
+
+}
+
+.registro_iniciar{
+  width: 20%;
+  display: flex;
+  gap: 3rem;
+}
+.registro_iniciar a{
+  color: var(--letra);
+  text-decoration: none;
+}
+.registro_iniciar a:hover{
+  font-size: larger;
+}
+.registro_iniciar a:hover{
+  color: white;
+}
+
+
+.cerrar_session{
+  width: 7rem;
+  height: 2rem;
+  border-radius: 1rem 1rem 1rem;
+  background: linear-gradient(20deg ,black 40% , grey,black );
+  border: 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.cerrar_session:hover{
+font-size: large;
+color: var(--logo);
+
+}
+ /* estilos/navegacion */
+#menu{
+
+  position:fixed;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 5%;
+  overflow: hidden;
+  gap: 2rem;
+  border-right:  0.03rem solid var(--logo);
+  padding-top: 1rem;
+}
+.icono{
+  width: auto;
+  height: auto;
+  padding: 0.2rem;
+  border: 2px solid var(--letra);
+  border-radius: 1rem 0.3rem 1rem;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  
+}
+
+.menuIcono{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+
+}
+
+.icono a{
+  height: auto;
+  text-decoration: none;
+  font-weight: bold;
+
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.icono span{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 0.8rem;
+  
+}
+
+.menuIcono:hover{
+  width: 2.5rem;
+  height: 2.5rem;
+ 
+}
+.opcion{
+  /* width: 70%;
+  height: 1rem;
+  border-radius: 6rem 6rem 6rem;
+  background-color: white;
+  position: absolute;
+  bottom: 2rem;
+  z-index: 5; */
+color: white;
+
+}
+
+
+
+/* estilos de aside o conteiner */
+#container{
+  width:95%;
+  height: auto;
+  display:flex;
+  text-align: center;
+  float: right;
+  margin-top: 5rem;
+}
+
+.titulo{
+  width: 17rem;
+  display:inline-flex;
+  margin: auto;
+  padding: 10px;
+  border: 0.2rem solid var(--letra) ;
+  border-radius: 1rem 1rem 1rem ;
+  box-shadow: 0.5rem 0.5rem 0.5rem rgb(7, 3, 3);
+  color:white;
+
+  
+}
+.titulo h1{
+  margin: auto;
+}
+
+section{
+  margin: auto;
+  width: 90% ;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.cars {
+  width:185px;
+  height: 345px;
+  overflow: hidden;
+  margin: 0.3rem;
+  border:2px solid var(--letra);
+  border-radius: 2rem 0.5rem 2rem;
+  box-shadow: 0.3rem 0.3rem 0.3rem  var(--letra);
+  background-color:  var(--cars);
+  color: var(--letra);
+  
+  
+}
+.cars a{
+  text-decoration: none;
+}
+.cars h3{
+  position:relative;
+  z-index: 1;
+  font-size: 0.8rem;
+  display: inline-flex;
+  padding: 0.1rem;
+  color:var(--logo);
+  background-color: #181c1f;;
+  /*background: linear-gradient(20deg, blueviolet ,black);*/
+  float: right;
+  
+  
+}
+
+.cars img{
+position: relative;
+bottom: 1rem;
+width:100%;
+height: 65%;
+
+}
+.conterCars  {
+  position: relative;
+  bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 0.5rem;
+  /* color: white; */
+  
+}
+.conterCars a h2:hover{
+  font-size: 1.6rem;
+  color:var(--logo);
+  
+}
+
+.cars .estado{
+  color: var(--logo);
+}
+
+/* estilos de l paginacion */
+.contenidoPaginacion{
+  width: 100%;
+  margin: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+ 
+
+}
+.paginas{
+  padding: 0.5rem;
+  border: 0.2rem solid var(--letra);
+  border-radius: 1rem 1rem 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+   
+}
+.pagi{
+  
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:rgb(0, 0, 0);
+  text-decoration: none;
+  color: white;
+
+}
+.pagi:hover{
+  font-size: medium;
+  background-color: var(--logo);
+}
+/*wstilos del bottom del menu y del despllegable del section*/
+.acount{
+  width: 12rem;
+  height: 15rem;
+  position: fixed;
+  z-index: 8;
+  left: 5.5%;
+  bottom: 2rem;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 2rem 2rem 2rem;
+  background-color: var(--cars);
+}
+.verAcount{
+  display: flex;
+}
+.acount a{
+  border-bottom: 0.1rem solid var(--logo) ;
+  width: 10rem;
+  height: 5rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.acount a:hover{
+  font-size: large;
+}
+.acount_button{
+  position: fixed;
+  bottom: 2rem;
+}
+    .bottom{
+    background-color:transparent;
+    border: 0;
+   
+    }
+
+
+
+/*estilos del fotter*/
+#footer{
+  width: 95%;
+  height: auto;
+  float: right;
+  margin-top: 2rem;
+  border-top: 0.1rem solid var(--logo);
+  background-color: #20262a;
+}
+
+footer h1 {
+  display:flex;
+  justify-content: center;
+  color: white;
+ 
+}
+ #footer .imgContac{ 
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem;
+}
+.imgContac img{
+  height: 2.5rem;
+  width: 2.5rem;
+  border: 00.2rem solid white;
+  border-radius: 1.5rem 0.5rem 1.5rem;
+  box-shadow: 0.5rem 0.5rem 0.5rem black;
+  padding: 0.7rem;
+  color: white;
+}
+.imgContac img:hover{
+  background:linear-gradient(20deg, grey ,black 70% , grey);
+}
+#WhatsApp{
+  color: white;
+}
+.copy {
+  display:flex ;
+  justify-content: center;
+  color: var(--logo);
+  width: 100%;
+  font-size: 1.5rem;
+  margin-top: 3rem;
+}
+
+
+.prueba{
+  color: white;}

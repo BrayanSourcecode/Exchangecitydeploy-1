@@ -1,0 +1,78 @@
+
+/* erreda de los estilos de titulo */
+
+.tituloPublicados h1{
+    display: inline-flex;
+    color: white;
+    border: 0.2rem solid #750a45;
+    border-radius: 1rem 1rem 1rem;
+    padding: 10px;
+    margin-bottom: 1rem;
+}
+
+
+/* eredad e los estilos publicar producto o los reutilizamos  */
+
+.editar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 2rem;
+    border-radius: 1rem 1rem 1rem;
+    background:linear-gradient(20deg ,black 40% , grey,black );
+    color: white;
+    text-decoration: none;
+}
+
+.editar:hover{
+    font-size: larger;
+}
+.carsBottom{
+    width: 200px;
+}
+.editarPublicacion{
+    background: linear-gradient(20deg ,black 40% , grey,black );
+    margin: 2rem;
+    display:none;
+    z-index: 2;
+    position: absolute;
+    
+}
+.publicarProductos p{
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.publicarProductos h1{
+    width: 80%;
+}
+.tituloPublicar{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 20rem;
+}
+
+.img_editar{
+    width: 7rem;
+    height: 7rem;
+}
+.conten_img_editar{
+    gap: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+.archivo_img{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.eliminado{
+
+    width: 100%;
+    color: var(--logo);
+}

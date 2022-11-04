@@ -1,0 +1,61 @@
+/* estilos del  login */
+
+  .login{
+  width:35%;
+  height:80%;
+  
+  /* background:linear-gradient(20deg, blueviolet ,#750a45 70% , blueviolet); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 2rem 2rem 2rem;
+  background-image: url("/exchangecity/proyectoSena/imagenes/conteiner/blanca.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  
+  
+  }
+  
+  .login h3{
+    display: flex;
+    justify-content: center;
+    color: white;
+  
+  }
+ form .inputLogin{
+    width:80%;
+    height: 1.5rem;
+    border: 0;
+    border-bottom: 1px solid white;
+    background-color:transparent;
+    color: white;
+  }
+  .login .labelLogin{
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    width: 100%;
+    height: 1.5rem;
+    display: flex;
+    justify-content: flex-start;
+    
+    
+    
+  }
+  .login input[type="submit"]{
+    margin: 2rem;
+    width: 7rem;
+    background:linear-gradient(20deg, grey ,black 70% , grey);
+    color: white;
+    border-radius: 1rem 1rem 1rem;
+  }
+  
+  
+  
+  
+  

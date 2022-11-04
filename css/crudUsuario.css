@@ -1,0 +1,29 @@
+:root{
+    --letra: #b4b4b4;
+    --logo:#10d078;
+    --cars:#323a40;
+  
+}
+
+.crudUsu{
+    border-radius: 1rem 1rem 1rem ;
+    background-color: var(--cars);
+    display: flex;
+    justify-content:space-around;
+    padding: 0.4rem;
+    border: 0.1rem solid var(--logo);
+    width: auto;
+     
+   
+}
+.datoCrudUsu{
+    padding: 0.4rem;
+    border: 0.1rem solid var(--logo);  
+}
+.crudBoton{
+    text-decoration: none; 
+    background-color: var(--letra);
+    color: var(--cars);
+    border: 0.2rem var(--cars);
+    margin: var(--cars);
+}
