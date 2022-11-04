@@ -1,6 +1,6 @@
 <?php 
 // include_once "/Exchangecity/funciones/conexionDB.php";
-include_once "app/Includes/header.php";
+include_once "/app/Includes/header.php";
 include_once "/app/Includes/menulateral.php";
 //include_once "/Exchangecity/funciones/masFunciones.php";
 
@@ -46,7 +46,7 @@ include_once "/app/Includes/menulateral.php";
           <a class="pagi"href="/PROYECTOSENA/paginacion/paginacion5.php">5</a>
       </div>
     </div> -->
-  <?php include_once "/Exchangecity/Includes/acount.php";
+  <?php include_once "/app/Includes/acount.php";
     unset($_SESSION["intercambio_eliminado"]);
     unset($_SESSION["intercambio_finalizado"]);
     
@@ -59,5 +59,5 @@ include_once "/app/Includes/menulateral.php";
 
 
   <?php 
-  include_once "/exchangecity/Includes/footer.php"
+  include_once "/app/Includes/footer.php"
   ?>
