@@ -103,6 +103,6 @@ if(isset($_POST)){
                  $_SESSION["error"]= $error ;
 
             }
-header("location: /includes/registro.php");
+header("location: https://exchangecity2-production.up.railway.app/includes/registro.php");
  }
 ?>
