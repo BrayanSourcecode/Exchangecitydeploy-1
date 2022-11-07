@@ -1,6 +1,6 @@
 <?php
 if(isset($_POST)){
-      header("location: /app/includes/registro.php");
+    
      include_once "/app/funciones/conexionDB.php";
      // se guardan los valores que recibimos  en variables para despues comprobarlos
      
@@ -81,28 +81,28 @@ if(isset($_POST)){
 
 // se comprueba que no exista ningun error antes de guardar los datos en la base de datos 
      if($error==0){
-     /* si no hay errores Se crifra la contrasena*/ 
-        $password_segura=password_hash("$contraseña",PASSWORD_BCRYPT,['cost'=>4]);
-        /* depues de que no halla errores a hora si se guardan los datos en bd*/
-        $add_usuario = "INSERT INTO usuario  VALUES(NULL,'$nombre','$apellido','$correo','$password_segura',NULL,'$tipo',NULL,NULL,NULL,NULL,NULL,NULL)"; 
-        $guardar_usurios = mysqli_query($db,$add_usuario);
+            /* si no hay errores Se crifra la contrasena*/ 
+              $password_segura=password_hash("$contraseña",PASSWORD_BCRYPT,['cost'=>4]);
+              /* depues de que no halla errores a hora si se guardan los datos en bd*/
+              $add_usuario = "INSERT INTO usuario  VALUES(NULL,'$nombre','$apellido','$correo','$password_segura',NULL,'$tipo',NULL,NULL,NULL,NULL,NULL,NULL)"; 
+              $guardar_usurios = mysqli_query($db,$add_usuario);
 
-     /* se  comprueba si el registro es corrrecto o fallo y se crea una secion para mostrarla   */
-      if($guardar_usurios){
-           $_SESSION["registro_completado"] = "el registro se ha completado con exito";
+      /* se  comprueba si el registro es corrrecto o fallo y se crea una secion para mostrarla   */
+            if($guardar_usurios){
+                 $_SESSION["registro_completado"] = "el registro se ha completado con exito";
 
            
            
-      }else{
-           $_SESSION["registro_fallo"] =" el registro  fallo";
-           
+            }else{
+                 $_SESSION["registro_fallo"] =" el registro  fallo";
+
+            }
+
+            }else{
+                 /*se crea una secion para mostrarle al usuario los los errores si hay */
+                 $_SESSION["error"]= $error ;
+
+            }
+      header("location: /app/includes/registro.php");
       }
-
-      }else{
-           /*se crea una secion para mostrarle al usuario los los errores si hay */
-           $_SESSION["error"]= $error ;
-          
-      }
-
-}
 ?>
