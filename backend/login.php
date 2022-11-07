@@ -51,7 +51,7 @@
 if(!$error==0){
     header("location: /app/includes/login.php");
 }else{
-    header("location: ../index.php");
+    header("location:../index.php");
 }
     
 
