@@ -1,5 +1,5 @@
 <?php 
  /*"se crea la conexion ala base de datos"*/
-$db=mysqli_connect("containers-us-west-54.railway.app","root","sp4Mowi6BZgG3LBIu0J0","railway");
+$db=mysqli_connect("$_ENV["MYSQLHOST"]","$_ENV["MYSQLUSER"]","$_ENV["MYSQLPASSWORD"]","$_ENV["MYSQLDATABASE"]");
 session_start();
 ?>
