@@ -1,5 +1,4 @@
 <?php 
- /*"se crea la conexion ala base de datos"*/
 $DB_HOST=$_ENV["DB_HOST"];
 $DB_USER=$_ENV["DB_USER"];
 $DB_PASSWORD=$_ENV["DB_PASSWORD"];
