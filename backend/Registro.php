@@ -103,6 +103,6 @@ if(isset($_POST)){
                  $_SESSION["error"]= $error ;
 
             }
-      header("location: ./app/includes/registro.php");
+      header("location: ../app/includes/registro.php");
       }
 ?>
