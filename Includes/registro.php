@@ -1,7 +1,7 @@
 <?php 
 include_once "/app/funciones/conexionDB.php";
-include_once "app/Includes/header.php";
-include_once "app/Includes/menulateral.php";
+include_once "/app/Includes/header.php";
+include_once "/app/Includes/menulateral.php";
 
 ?>
   <!--contenido de la pagina o aside-->
@@ -42,7 +42,7 @@ include_once "app/Includes/menulateral.php";
 
     </form>
   </div>
-   <script src="/exchangecity/PROYECTOSENA/js/index.js"></script> 
+   <script src="/js/index.js"></script> 
   </section>
   
   <!--limpiamos los flotados del aside -->
