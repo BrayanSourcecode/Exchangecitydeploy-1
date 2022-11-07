@@ -1,7 +1,7 @@
 <?php 
-include_once "/app/proyectoSena/funciones/conexionDB.php";
-include_once "/app/proyectoSena/Includes/header.php";
-include_once "/app/proyectoSena/Includes/menulateral.php";
+include_once "/app/funciones/conexionDB.php";
+include_once "/app/Includes/header.php";
+include_once "/app/Includes/menulateral.php";
 
 ?>
  
@@ -28,7 +28,7 @@ include_once "/app/proyectoSena/Includes/menulateral.php";
 
  
   <?php 
-  include_once "/app/proyectoSena/Includes/footer.php"
+  include_once "/app/Includes/footer.php"
   
   ?>
 
