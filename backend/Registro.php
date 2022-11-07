@@ -100,7 +100,7 @@ if(isset($_POST)){
          $_SESSION["error"]= $error ;
         
     }
-header("location: /registro.php");
+header("location: /includes/registro.php");
 }
 
 ?>
