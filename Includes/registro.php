@@ -1,13 +1,13 @@
 <?php 
-include_once "/wamp64/www/Exchangecity/proyectoSena/funciones/conexionDB.php";
-include_once "/wamp64/www/exchangecity/proyectoSena/Includes/header.php";
-include_once "/wamp64/www/exchangecity/proyectoSena/Includes/menulateral.php";
+include_once "/app/funciones/conexionDB.php";
+include_once "app/Includes/header.php";
+include_once "app/Includes/menulateral.php";
 
 ?>
   <!--contenido de la pagina o aside-->
   <section id="container">
    
-    <form  class="registro login"action="/exchangecity/PROYECTOSENA/backend/Registro.php" method="POST">
+    <form  class="registro login"action="/backend/Registro.php" method="POST">
     
     <h3>Registro</h3>
     <?php echo isset($_SESSION["registro_fallo"]) ? "<div>".$_SESSION["registro_fallo"]."</div>":"";?>
@@ -50,7 +50,7 @@ include_once "/wamp64/www/exchangecity/proyectoSena/Includes/menulateral.php";
    
  
    <?php 
-  include_once "/wamp64/www/exchangecity/proyectoSena/Includes/footer.php"
+  include_once "/app/Includes/footer.php"
   
   ?>
 
