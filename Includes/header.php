@@ -42,14 +42,14 @@
           </div>
          
           
-          <a class="cerrar_session" href="/exchangecity/proyectoSena/backend/cerrar_session.php" >cerra  sesion</a>
+          <a class="cerrar_session" href="/backend/cerrar_session.php" >cerra  sesion</a>
       <?php endif; ?>
       <?php if(isset($_SESSION["usuario_administrador"])):?>
             <div class="bienvenido">
             <h3>Bienvenido Administrador <?php echo $_SESSION["usuario_administrador"]["usu_nombre"] ." ".$_SESSION["usuario_administrador"]["usu_apellido"]?></h3>
             </div>
 
-            <a class="cerrar_session" href="/exchangecity/proyectoSena/backend/cerrar_session.php" >cerra  sesion</a>
+            <a class="cerrar_session" href="/backend/cerrar_session.php" >cerra  sesion</a>
 
           <?php endif; ?>
           
@@ -60,8 +60,8 @@
 
       <?php if(!isset($_SESSION["usuario"]) && !isset($_SESSION["usuario_administrador"])): ?> 
         <div class="registro_iniciar">
-          <a class="inicioSesion" href="/exchangecity/proyectoSena/Includes/login.php">Login</a>
-          <a  class="registroUsuario" href="/exchangecity/proyectoSena/Includes/registro.php">Registrarse</a>
+          <a class="inicioSesion" href="/Includes/login.php">Login</a>
+          <a  class="registroUsuario" href="/Includes/registro.php">Registrarse</a>
         </div>
       <?php endif; ?>
     </div>
