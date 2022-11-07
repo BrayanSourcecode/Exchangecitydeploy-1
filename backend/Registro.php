@@ -1,4 +1,3 @@
-
 <?php
 if(isset($_POST)){
      include_once "/app/funciones/conexionDB.php";
