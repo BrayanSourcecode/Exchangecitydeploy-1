@@ -1,5 +1,5 @@
 <?php 
-include_once "/funciones/conexionDB.php";
+include_once "/app/funciones/conexionDB.php";
 include_once "/app/Includes/header.php";
 include_once "/app/Includes/menulateral.php";
 include_once "/app/funciones/masFunciones.php";
