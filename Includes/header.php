@@ -7,15 +7,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/index.css">
-  <link rel="stylesheet" href="/app/css/login.css">
-  <link rel="stylesheet" href="/app/css/registro.css">
-  <link rel="stylesheet" href="/app/css/datosusuario.css">
-  <link rel="stylesheet" href="/app/css/publicarProductos.css">
-  <link rel="stylesheet" href="/app/css/editarPublicacion.css">
-  <link rel="stylesheet" href="/app/css/descripcion.css">
-  <link rel="stylesheet" href="/app/css/intercambio/crearIntercambio.css">
-  <link rel="stylesheet" href="/app/css/avisoEliminacion.css">
-  <link rel="stylesheet" href="/app/css/crudUsuario.css">
+  <link rel="stylesheet" href="/css/login.css">
+  <link rel="stylesheet" href="/css/registro.css">
+  <link rel="stylesheet" href="/css/datosusuario.css">
+  <link rel="stylesheet" href="/css/publicarProductos.css">
+  <link rel="stylesheet" href="/css/editarPublicacion.css">
+  <link rel="stylesheet" href="/css/descripcion.css">
+  <link rel="stylesheet" href="/css/intercambio/crearIntercambio.css">
+  <link rel="stylesheet" href="/css/avisoEliminacion.css">
+  <link rel="stylesheet" href="/css/crudUsuario.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
  
   <title>Contenido</title>
@@ -26,7 +26,7 @@
   <header id="header" >
     
     <div class="logo">
-      <a href="/exchangecity/PROYECTOSENA/index.php">
+      <a href="/index.php">
         <span class="material-symbols-outlined iconoLogo">
             compare_arrows
         </span>
