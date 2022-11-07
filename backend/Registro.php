@@ -1,6 +1,6 @@
 
 <?php
-
+session_start();
 if(isset($_POST)){
      /* si existe post se hace la conexion ala base de datos*/
      include_once "/app/funciones/conexionDB.php";
@@ -107,7 +107,4 @@ if(isset($_POST)){
       }
  header("location: /app/includes/registro.php");
 }
-
- 
-
 ?>
