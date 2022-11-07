@@ -1,7 +1,7 @@
 <?php
   if(isset($_POST)){
     /* si existe post se hace la conexion ala base de datos*/
-    include_once "/wamp64/www/exchangecity/proyectoSena/funciones/conexionDB.php";
+    include_once "/app/funciones/conexionDB.php";
     /* se crean variables para poder validar los datos  */
     $correo=  isset( $_POST["correo"]) ? $_POST["correo"]:false;
      $contraseña = isset($_POST["password"]) ? $_POST["password"]:false;
@@ -49,7 +49,7 @@
     }
     //si hay errores los mostramos si no hay mostramos la seccion en el index
 if(!$error==0){
-    header("location: /exchangecity/proyectoSena/includes/login.php");
+    header("location: /includes/login.php");
 }else{
     header("location: ../index.php");
 }
