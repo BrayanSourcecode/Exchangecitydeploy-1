@@ -1,5 +1,6 @@
 <?php
 if(isset($_POST)){
+      header("location: /app/includes/registro.php");
      include_once "/app/funciones/conexionDB.php";
      // se guardan los valores que recibimos  en variables para despues comprobarlos
      
@@ -102,6 +103,6 @@ if(isset($_POST)){
            $_SESSION["error"]= $error ;
           
       }
- header("location: /app/includes/registro.php");
+
 }
 ?>
