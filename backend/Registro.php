@@ -1,7 +1,6 @@
 
 <?php
 if(isset($_POST)){
-     /* si existe post se hace la conexion ala base de datos*/
      include_once "/app/funciones/conexionDB.php";
      // se guardan los valores que recibimos  en variables para despues comprobarlos
      
