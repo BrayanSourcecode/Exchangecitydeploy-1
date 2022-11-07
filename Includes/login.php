@@ -1,7 +1,7 @@
 <?php 
-include_once "/wamp64/www/Exchangecity/proyectoSena/funciones/conexionDB.php";
-include_once "/wamp64/www/exchangecity/proyectoSena/Includes/header.php";
-include_once "/wamp64/www/exchangecity/proyectoSena/Includes/menulateral.php";
+include_once "/app/proyectoSena/funciones/conexionDB.php";
+include_once "/app/proyectoSena/Includes/header.php";
+include_once "/app/proyectoSena/Includes/menulateral.php";
 
 ?>
  
@@ -9,7 +9,7 @@ include_once "/wamp64/www/exchangecity/proyectoSena/Includes/menulateral.php";
  <!--contenido de la pagina o aside-->
   <section id="container">
     
-  <form class="login" action="/exchangecity/PROYECTOSENA/backend/login.php" method="post">
+  <form class="login" action="/backend/login.php" method="post">
        <h3>Iniciar Seccion</h3> 
        <label class="labelLogin" for="correo">Correo</label>
        <input  class="inputLogin" type="email" name="correo">
@@ -28,7 +28,7 @@ include_once "/wamp64/www/exchangecity/proyectoSena/Includes/menulateral.php";
 
  
   <?php 
-  include_once "/wamp64/www/exchangecity/proyectoSena/Includes/footer.php"
+  include_once "/app/proyectoSena/Includes/footer.php"
   
   ?>
 
