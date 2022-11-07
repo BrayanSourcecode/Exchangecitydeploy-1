@@ -98,11 +98,13 @@ if(isset($_POST)){
 
             }
 
-            }else{
-                 /*se crea una secion para mostrarle al usuario los los errores si hay */
-                 $_SESSION["error"]= $error ;
+    }else{
+         /*se crea una secion para mostrarle al usuario los los errores si hay */
+         $_SESSION["error"]= $error ;
+        header("location: /includes/registro.php");
 
-            }
+    }
 header("location: /includes/registro.php");
  }
+
 ?>
