@@ -3,7 +3,7 @@
 
 if(isset($_POST)){
      /* si existe post se hace la conexion ala base de datos*/
-     include_once "/wamp64/www/exchangecity/proyectoSena/funciones/conexionDB.php";
+     include_once "/app/funciones/conexionDB.php";
      // se guardan los valores que recibimos  en variables para despues comprobarlos
      
      $nombre= isset ($_POST["nombre"]) ? $_POST["nombre"]:false;
@@ -105,7 +105,7 @@ if(isset($_POST)){
            $_SESSION["error"]= $error ;
           
       }
- header("location: /exchangecity/proyectoSena/includes/registro.php");
+ header("location: /includes/registro.php");
 }
 
  
