@@ -85,7 +85,7 @@ include_once "/app/funciones/masFunciones.php";
           </div>
       </div>
     </form>
-    <?php include_once "/app/proyectoSena/Includes/acount.php" ?>
+    <?php include_once "/app/Includes/acount.php" ?>
     </section>
   </section>
   <?php
