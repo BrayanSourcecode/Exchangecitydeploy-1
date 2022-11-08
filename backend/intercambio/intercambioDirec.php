@@ -10,7 +10,6 @@ $sql="UPDATE intercambio  SET
 int_exitosa='1' WHERE int_codigo='$cod_int'";
 
 if(mysqli_query($db,$sql)){
-    echo "se inserto";
     header("location: /index.php");
     $_SESSION["intercambio_finalizado"]="su intercambio a finalizado con exito";
 
