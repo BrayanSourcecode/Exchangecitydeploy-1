@@ -25,7 +25,7 @@ include_once "/app/funciones/masFunciones.php";
             <a  href="/Includes/intercambio/2intercambio.php" class="Eliminar">Cancelar</a>
         </div>
        </div>
-  <?php include_once "/Includes/acount.php" ?>
+  <?php include_once "/app/Includes/acount.php" ?>
     </section>
   </section>
   <!--limpiamos los flotados del aside -->
