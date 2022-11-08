@@ -83,7 +83,7 @@ include_once "/app/funciones/masFunciones.php";
                 </div>
                 <div class="enviar_eliminar">
                 <input  class="Eliminar" type="submit" value="Actualizar Publicacion">
-                <a class="Eliminar" href="/exchangecity/proyectoSena/Includes/eliminarPublicacion.php?pub_codigo=<?php echo $_REQUEST["pub_codigo"] ?>">Eliminar Publicacion</a></>
+                <a class="Eliminar" href="/Includes/eliminarPublicacion.php?pub_codigo=<?php echo $_REQUEST["pub_codigo"] ?>">Eliminar Publicacion</a></>
                 </div>
             </form>
   <?php include_once "/app/Includes/acount.php"?>
