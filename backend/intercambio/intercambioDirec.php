@@ -1,8 +1,8 @@
 <?php
     include_once "/app/funciones/conexionDB.php";
     include_once "/app/funciones/masFunciones.php";
-?>
-<?php 
+
+
 $inter_exist =IntercambioUsuarioProveedor($db,$_SESSION["login_correcto"]["usu_codigo"]);
 $cod_int=$_REQUEST["int_codigo"];
 if(isset($inter_exist)){
@@ -25,4 +25,4 @@ if(mysqli_query($db,$sql)){
 
 
 
-?>
+
