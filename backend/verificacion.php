@@ -22,8 +22,8 @@
         $add_verificacion="INSERT INTO datos_verificado VALUES('$id','$convercion1','$convercion2')";
 
        if (mysqli_query($db,$add_verificacion)){
-          echo "se inserto en la base de datos";
-          header("location:/Includes/datosusuario.php");
+   
+             header("location: /Includes/datosusuario.php");
        }else{
          echo "mensaje: " .mysqli_error($db);
        }
