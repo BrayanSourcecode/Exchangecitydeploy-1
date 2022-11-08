@@ -1,8 +1,8 @@
 <?php 
-include_once "/wamp64/www/Exchangecity/proyectoSena/funciones/conexionDB.php";
-include_once "/wamp64/www/exchangecity/proyectoSena/Includes/header.php";
-include_once "/wamp64/www/exchangecity/proyectoSena/Includes/menulateral.php";
-include_once "/wamp64/www/Exchangecity/proyectoSena/funciones/masFunciones.php";
+include_once "/app/funciones/conexionDB.php";
+include_once "/app/Includes/header.php";
+include_once "/app/Includes/menulateral.php";
+include_once "/app/funciones/masFunciones.php";
 $usuario=$_REQUEST["usu_codigo"];
 ?>
  
@@ -23,11 +23,11 @@ $usuario=$_REQUEST["usu_codigo"];
                 <h4><?php echo $_SESSION["login_correcto"]["usu_correo"] ?></h4>
 
         <div class="confirmar_cancelar">
-            <a href="/exchangecity/proyectoSena/backend/eliminarCuenta.php?usu_codigo=<?php echo $usuario;?>" class="Eliminar">Confirmar</a>
-            <a  href="/exchangecity/proyectoSena/Includes/datosusuario.php" class="Eliminar">Cancelar</a>
+            <a href="/backend/eliminarCuenta.php?usu_codigo=<?php echo $usuario;?>" class="Eliminar">Confirmar</a>
+            <a  href="/Includes/datosusuario.php" class="Eliminar">Cancelar</a>
         </div>
        </div>
-  <?php include_once "/wamp64/www/Exchangecity/proyectoSena/Includes/acount.php" ?>
+  <?php include_once "/app/Includes/acount.php" ?>
     </section>
   </section>
   <!--limpiamos los flotados del aside -->
@@ -35,5 +35,5 @@ $usuario=$_REQUEST["usu_codigo"];
 
  
   <?php 
-  include_once "/wamp64/www/exchangecity/proyectoSena/Includes/footer.php"
+  include_once "/app/proyectoSena/Includes/footer.php"
   ?>
