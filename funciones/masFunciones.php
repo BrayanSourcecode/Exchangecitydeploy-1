@@ -1,5 +1,4 @@
 <?php 
-/* funcion para consultar ciudades */
 function ConsultarCiudades($db){
     $sql="SELECT * FROM ciudad ";
 
@@ -130,7 +129,6 @@ function ConsultarDescripcionPublicacion($db,$id_publicacion){
 
 ?>
 
-
 <?php
 
 function ConsultarPublicacionesUsuario($db,$id_usuario){
@@ -186,8 +184,6 @@ function CodigoUsuarioProveedor($db,$cod_usuario){
 
     if(isset($existeInter)){
         return $existeInter;
-    }else{
-       
     }
 }
 ?>
