@@ -1,6 +1,6 @@
 <?php
 include_once("/app/funciones/conexionDB.php");
-include_once("/app/funciones/masFunciones.php");
+// include_once("/app/funciones/masFunciones.php");
 
 $id=$_SESSION["login_correcto"]["usu_codigo"];
 $tituloPub= isset ($_POST["tituloPublicacion"]) ? $_POST["tituloPublicacion"]:false;
