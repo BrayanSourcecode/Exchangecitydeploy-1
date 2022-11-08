@@ -1,8 +1,8 @@
 <?php 
-include_once "/wamp64/www/Exchangecity/proyectoSena/funciones/conexionDB.php";
-include_once "/wamp64/www/exchangecity/proyectoSena/Includes/header.php";
-include_once "/wamp64/www/exchangecity/proyectoSena/Includes/menulateral.php";
-include_once "/wamp64/www/Exchangecity/proyectoSena/funciones/masFunciones.php";
+include_once "/app/funciones/conexionDB.php";
+include_once "/app/Includes/header.php";
+include_once "/app/Includes/menulateral.php";
+include_once "/app/funciones/masFunciones.php";
 
 ?>
  
@@ -86,7 +86,7 @@ include_once "/wamp64/www/Exchangecity/proyectoSena/funciones/masFunciones.php";
                 <a class="Eliminar" href="/exchangecity/proyectoSena/Includes/eliminarPublicacion.php?pub_codigo=<?php echo $_REQUEST["pub_codigo"] ?>">Eliminar Publicacion</a></>
                 </div>
             </form>
-  <?php include_once "/wamp64/www/Exchangecity/proyectoSena/Includes/acount.php"?>
+  <?php include_once "/app/Includes/acount.php"?>
     </section>
   </section>
 
@@ -99,5 +99,5 @@ include_once "/wamp64/www/Exchangecity/proyectoSena/funciones/masFunciones.php";
 
  
   <?php 
-  include_once "/wamp64/www/exchangecity/proyectoSena/Includes/footer.php"
+  include_once "/app/Includes/footer.php"
   ?>
