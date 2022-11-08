@@ -40,7 +40,7 @@
             header("location:/exchangecity/proyectosena/includes/datosusuario.php");
     }else{
         $_SESSION["actualizacion_fallo"]="la actualizacion fallo intentalo de nuevo";
-        header("location:/exchangecity/proyectosena/includes/datosusuario.php");
+        header("location:/Includes/datosusuario.php");
     }
 
 
