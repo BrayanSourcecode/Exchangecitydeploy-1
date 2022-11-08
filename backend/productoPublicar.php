@@ -99,7 +99,7 @@ if($error==0){
         echo "no se inserto".mysqli_error($db);
     }
 }else{
-
+   header("location: /Includes/publicarProducto.php");
 }
 
 ?>
