@@ -1,8 +1,8 @@
 <?php
-include_once "/wamp64/www/Exchangecity/proyectoSena/funciones/conexionDB.php";
-include_once "/wamp64/www/exchangecity/proyectoSena/Includes/header.php";
-include_once "/wamp64/www/exchangecity/proyectoSena/Includes/menulateral.php";
-include_once "/wamp64/www/Exchangecity/proyectoSena/funciones/masFunciones.php";
+include_once "/app/funciones/conexionDB.php";
+include_once "/app/Includes/header.php";
+include_once "/app/Includes/menulateral.php";
+include_once "/app/funciones/masFunciones.php";
 
 ?>
 
@@ -14,7 +14,7 @@ include_once "/wamp64/www/Exchangecity/proyectoSena/funciones/masFunciones.php";
   </div>
   <h2 class="eliminado" ><?php echo isset($_SESSION["intercambio_not_creado"]) ?$_SESSION["intercambio_not_creado"]:"";?></h2>
   <section>
-    <form class="publicarProductos" action="/exchangecity/PROYECTOSENA/backend/intercambio/crearIntercambio.php" enctype="multipart/form-data" method="POST">
+    <form class="publicarProductos" action="/backend/intercambio/crearIntercambio.php" enctype="multipart/form-data" method="POST">
     <?php echo isset($_SESSION["publicacion_not_dueño"]) ?  $_SESSION["publicacion_not_dueño"]:""; ?>
     <?php echo isset($_SESSION["publicacion_not_existe"]) ?  $_SESSION["publicacion_not_existe"]:""; ?>
     <label class="label" for="cod_publicacion">codigo Publicacion</label>
@@ -43,7 +43,7 @@ include_once "/wamp64/www/Exchangecity/proyectoSena/funciones/masFunciones.php";
     </form>
 
 
-    <?php include_once "/wamp64/www/Exchangecity/proyectoSena/Includes/acount.php" ?>
+    <?php include_once "/app/Includes/acount.php" ?>
   </section>
 </section>
 <!--limpiamos los flotados del aside -->
@@ -51,7 +51,7 @@ include_once "/wamp64/www/Exchangecity/proyectoSena/funciones/masFunciones.php";
 
 
 <?php
-include_once "/wamp64/www/exchangecity/proyectoSena/Includes/footer.php"
+include_once "/app/Includes/footer.php"
 ?>
 
 <?php
