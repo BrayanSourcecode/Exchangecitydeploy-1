@@ -39,5 +39,5 @@ include_once "/app/Includes/menulateral.php";
       unset($_SESSION["correo_erroneo"]);
       unset($_SESSION["contrasena_mala"]);
       unset($_SESSION["password_vacia"]);
-      unset($_SESSION["login_correcto"]);
+//       unset($_SESSION["login_correcto"]);
   ?>
