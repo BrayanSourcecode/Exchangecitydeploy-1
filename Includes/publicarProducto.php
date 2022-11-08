@@ -1,8 +1,8 @@
 <?php 
-include_once "/wamp64/www/Exchangecity/proyectoSena/funciones/conexionDB.php";
-include_once "/wamp64/www/exchangecity/proyectoSena/Includes/header.php";
-include_once "/wamp64/www/exchangecity/proyectoSena/Includes/menulateral.php";
-include_once "/wamp64/www/Exchangecity/proyectoSena/funciones/masFunciones.php";
+include_once "/app/funciones/conexionDB.php";
+include_once "/app/Includes/header.php";
+include_once "/app/Includes/menulateral.php";
+include_once "/app/funciones/masFunciones.php";
 
 ?>
  
@@ -15,7 +15,7 @@ include_once "/wamp64/www/Exchangecity/proyectoSena/funciones/masFunciones.php";
             <h1>Publicar Producto</h1>
         </div>
         <section>
-        <form class="publicarProductos" action="/exchangecity/PROYECTOSENA/backend/productoPublicar.php" enctype="multipart/form-data" method="POST">
+        <form class="publicarProductos" action="/backend/productoPublicar.php" enctype="multipart/form-data" method="POST">
                 <label for="tituloPublicacionv">Titulo Publicacion</label>
                 <?php echo isset ($_SESSION["noVerificado"]) ? $_SESSION["noVerificado"]:""; ?>
                 <input  class="inputPublicar inputLogin" type="text" name="tituloPublicacion">
@@ -56,7 +56,7 @@ include_once "/wamp64/www/Exchangecity/proyectoSena/funciones/masFunciones.php";
                 <input class="img inputPublicar inputLogin" type="file" name="imagen4">
                 <input  class=" buttomProducto actualizarDatos" type="submit" value="Publicar">
             </form>
-            <?php include_once "/wamp64/www/Exchangecity/proyectoSena/Includes/acount.php" ?> 
+            <?php include_once "/app/Includes/acount.php" ?> 
     </section>
   </section>
  
@@ -64,7 +64,7 @@ include_once "/wamp64/www/Exchangecity/proyectoSena/funciones/masFunciones.php";
   <div style="clear: both"></div>
   
   <?php 
-  include_once "/wamp64/www/exchangecity/proyectoSena/Includes/footer.php"
+  include_once "/app/Includes/footer.php"
   
   ?>
 
