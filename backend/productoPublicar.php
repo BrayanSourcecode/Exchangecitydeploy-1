@@ -83,9 +83,9 @@ if($verificado=mysqli_fetch_assoc($consultaFun)){
     }
            
 }else{
-        $_SESSION["noVerificado"]="Por Favor Verificarse Gracias";
-        header("location:/Includes/publicarProducto.php");
-        $error+=1;
+     $_SESSION["noVerificado"]="Por Favor Verificarse Gracias";
+     header("location:/Includes/publicarProducto.php");
+     $error+=1;
 }
 //se comprueba que no hallan errores para guardar la publicacion
 if($error==0){         
@@ -99,7 +99,7 @@ if($error==0){
         echo "no se inserto".mysqli_error($db);
     }
 }else{
-   header("location: /Includes/publicarProducto.php");
+header("location: /Includes/publicarProducto.php");
 }
 
 ?>
