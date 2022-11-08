@@ -1,7 +1,7 @@
 <?php
-
 include_once("/app/funciones/conexionDB.php");
 include_once("/app/funciones/masFunciones.php");
+
 $id=$_SESSION["login_correcto"]["usu_codigo"];
 $tituloPub= isset ($_POST["tituloPublicacion"]) ? $_POST["tituloPublicacion"]:false;
 $descripcionPub= isset ($_POST["descripcion"]) ? $_POST["descripcion"]:false;
@@ -83,9 +83,9 @@ if($verificado=mysqli_fetch_assoc($consultaFun)){
     }
            
 }else{
-     $_SESSION["noVerificado"]="Por Favor Verificarse Gracias";
-     header("location:/Includes/publicarProducto.php");
-     $error+=1;
+      header("location: /Includes/publicarProducto.php");
+      $_SESSION["noVerificado"]="Por Favor Verificarse Gracias";
+      $error+=1;
 }
 //se comprueba que no hallan errores para guardar la publicacion
 if($error==0){         
@@ -98,10 +98,8 @@ if($error==0){
     }else{
         echo "no se inserto".mysqli_error($db);
     }
-}else{
-header("location: /Includes/publicarProducto.php");
+}else{header("location: /Includes/publicarProducto.php");
 }
-
 ?>
 
 
