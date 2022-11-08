@@ -10,8 +10,7 @@ function ConsultarCiudades($db){
     return $datosCiudad;
 }
 
-?>
-<?php
+
 function ConsultarCategoria($db){
     $sql="SELECT * FROM categoria ";
 
@@ -22,9 +21,9 @@ function ConsultarCategoria($db){
     }
     return $datosCategoria;
 }
-?>
 
-<?php
+
+
     function  ConsultarDatosVerificado($db){       
        $codigoUsu= $_SESSION["login_correcto"]["usu_codigo"];
        $sql="SELECT * FROM datos_verificado where FK_dat_codigo_du= '$codigoUsu'";
@@ -34,9 +33,9 @@ function ConsultarCategoria($db){
         return false;
         }
     }
-?>
 
-<?php
+
+
 function ConsultarEstado($db){
     $sql="SELECT * FROM estado ";
 
@@ -49,7 +48,7 @@ function ConsultarEstado($db){
 }
 ?>
 
-<?php
+
 function ConsultarPublicaciones($db){
     $sql="SELECT * FROM publicacion  ORDER BY  pub_codigo  DESC LIMIT 10";
 
@@ -73,9 +72,9 @@ function ConsultarCategoriaPublicacion($db,$id_categoria){
     }
     return $datosCategoriaPublicacion;
 }
-?>
 
-<?php
+
+
 function ConsultarEstadoPublicacion($db,$id_estado){
     $sql="SELECT * FROM estado WHERE est_codigo='$id_estado'";
 
@@ -86,8 +85,7 @@ function ConsultarEstadoPublicacion($db,$id_estado){
     }
     return $datosEstadoPublicacion;
 }
-?>
-<?php
+
     function ConsultarPublicacionCat($db,$id_categoria){
         $sql="SELECT * FROM publicacion WHERE FK_cat_codigo_pc='$id_categoria'";
 
@@ -98,9 +96,9 @@ function ConsultarEstadoPublicacion($db,$id_estado){
         }
         return $publicacionCategoria;
     }
-?>
 
-<?php
+
+
 
 function ConsultarDescripcionPublicacion($db,$id_publicacion){
     $sql="SELECT * FROM publicacion WHERE pub_codigo='$id_publicacion'";
@@ -112,9 +110,7 @@ function ConsultarDescripcionPublicacion($db,$id_publicacion){
     }
     return $datosDescripcionPublicacion;
 }
-?>
 
-<?php 
     function ConsultarVerificados($db,$id_usuario){
 
         $sql="SELECT * FROM datos_verificado WHERE FK_dat_codigo_du='$id_usuario'";
@@ -127,9 +123,6 @@ function ConsultarDescripcionPublicacion($db,$id_publicacion){
         return $datosVerificado;
     }
 
-?>
-
-<?php
 
 function ConsultarPublicacionesUsuario($db,$id_usuario){
 
@@ -186,7 +179,7 @@ function CodigoUsuarioProveedor($db,$cod_usuario){
         return $existeInter;
     }
 }
-?>
+
 
 
 
