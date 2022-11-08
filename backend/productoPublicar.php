@@ -1,7 +1,7 @@
 <?php
 
-include_once("/wamp64/www/Exchangecity/proyectoSena/funciones/conexionDB.php");
-include_once("/wamp64/www//exchangecity/proyectoSena/funciones/masFunciones.php");
+include_once("/app/funciones/conexionDB.php");
+include_once("/app/funciones/masFunciones.php");
 $id=$_SESSION["login_correcto"]["usu_codigo"];
 $tituloPub= isset ($_POST["tituloPublicacion"]) ? $_POST["tituloPublicacion"]:false;
 $descripcionPub= isset ($_POST["descripcion"]) ? $_POST["descripcion"]:false;
@@ -84,7 +84,7 @@ if($verificado=mysqli_fetch_assoc($consultaFun)){
            
 }else{
 $_SESSION["noVerificado"]="Por Favor Verificarse Gracias";
-header("location:/exchangecity/proyectosena/includes/publicarProducto.php");
+header("location:/Includes/publicarProducto.php");
 $error+=1;
 }
 //se comprueba que no hallan errores para guardar la publicacion
@@ -100,7 +100,7 @@ if($error==0){
         echo "no se inserto".mysqli_error($db);
     }
 }else{
-    header("location:/exchangecity/proyectosena/includes/publicarProducto.php");
+    header("location:/Includes/publicarProducto.php");
     
 }
 
