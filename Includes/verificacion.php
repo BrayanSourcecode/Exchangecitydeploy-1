@@ -1,7 +1,7 @@
 <?php 
-include_once "/wamp64/www/Exchangecity/proyectoSena/funciones/conexionDB.php";
-include_once "/wamp64/www/exchangecity/proyectoSena/Includes/header.php";
-include_once "/wamp64/www/exchangecity/proyectoSena/Includes/menulateral.php";
+include_once "/app/funciones/conexionDB.php";
+include_once "/app/Includes/header.php";
+include_once "/app/Includes/menulateral.php";
 
 ?>
 
@@ -10,14 +10,14 @@ include_once "/wamp64/www/exchangecity/proyectoSena/Includes/menulateral.php";
         <h1>Verificacion Usuario</h1>
     </div>
 <section>
-    <form class="verificadoForm login"   action="/exchangecity/proyectoSena/backend/verificacion.php"  enctype="multipart/form-data" method="POST" >
+    <form class="verificadoForm login"   action="/backend/verificacion.php"  enctype="multipart/form-data" method="POST" >
         <label for="imagenCedula">Imagen de la cedula</label>
         <input class="inputVerificado inputLogin" type="file" name="imagenCedula">
         <label for="imagenDireccion">Imagen para comprovar dirrecion</label>
         <input class="inputVerificado inputLogin" type="file" name="imagenDireccion">
         <input class="botonVerificar  buttomProducto " type="submit" value="Enviar">
     </form>
-    <?php include_once "/wamp64/www/Exchangecity/proyectoSena/Includes/acount.php" ?>
+    <?php include_once "/app/Includes/acount.php" ?>
 </section>
 </section>
 
@@ -31,6 +31,6 @@ include_once "/wamp64/www/exchangecity/proyectoSena/Includes/menulateral.php";
 
 
 <?php 
-  include_once "/wamp64/www/exchangecity/proyectoSena/Includes/footer.php"
+  include_once "/app/Includes/footer.php"
   
   ?>
