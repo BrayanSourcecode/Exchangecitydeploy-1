@@ -1,8 +1,8 @@
 <?php 
-include_once "/wamp64/www/Exchangecity/proyectoSena/funciones/conexionDB.php";
-include_once "/wamp64/www/exchangecity/proyectoSena/Includes/header.php";
-include_once "/wamp64/www/exchangecity/proyectoSena/Includes/menulateral.php";
-include_once "/wamp64/www/Exchangecity/proyectoSena/funciones/masFunciones.php";
+include_once "/app/funciones/conexionDB.php";
+include_once "/app/Includes/header.php";
+include_once "/app/Includes/menulateral.php";
+include_once "/app/funciones/masFunciones.php";
 $publicacion=$_REQUEST["pub_codigo"];
 ?>
  
@@ -26,11 +26,11 @@ $publicacion=$_REQUEST["pub_codigo"];
                 <h4><?php echo  $datosPublicacion["pub_codigo"] ?></h4>
 
         <div class="confirmar_cancelar">
-            <a href="/exchangecity/proyectoSena/backend/eliminarPublicacion.php?pub_codigo=<?php echo $publicacion;?>" class="Eliminar">Confirmar</a>
-            <a  href="/exchangecity/proyectoSena/Includes/misPublicaciones.php" class="Eliminar">Cancelar</a>
+            <a href="/backend/eliminarPublicacion.php?pub_codigo=<?php echo $publicacion;?>" class="Eliminar">Confirmar</a>
+            <a  href="/Includes/misPublicaciones.php" class="Eliminar">Cancelar</a>
         </div>
        </div>
-  <?php include_once "/wamp64/www/Exchangecity/proyectoSena/Includes/acount.php" ?>
+  <?php include_once "/app/Includes/acount.php" ?>
     </section>
   </section>
   <!--limpiamos los flotados del aside -->
@@ -38,6 +38,6 @@ $publicacion=$_REQUEST["pub_codigo"];
 
  
   <?php 
-  include_once "/wamp64/www/exchangecity/proyectoSena/Includes/footer.php";
+  include_once "/app/Includes/footer.php";
   
   ?>
