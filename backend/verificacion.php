@@ -1,5 +1,5 @@
 <?php
-    include_once "/wamp64/www/Exchangecity/proyectoSena/funciones/conexionDB.php";
+    include_once "/app/funciones/conexionDB.php";
     $id=$_SESSION["login_correcto"]["usu_codigo"];
     $imgCedula= isset ($_FILES["imagenCedula"]["tmp_name"]) ? $_FILES["imagenCedula"]["tmp_name"]:false;
     $imgDireccion= isset ($_FILES["imagenDireccion"]["tmp_name"]) ? $_FILES["imagenDireccion"]["tmp_name"]:false;
