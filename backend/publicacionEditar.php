@@ -1,5 +1,5 @@
 <?php 
-  include_once("/wamp64/www/Exchangecity/proyectoSena/funciones/conexionDB.php");
+  include_once("/app/funciones/conexionDB.php");
     
   //se recibe el ide de la publicacion ha actualizar
  $pub_codigo=$_REQUEST["pub_codigo"];
@@ -203,7 +203,7 @@ if($insertar8){
 
 if(count($error)==0){
 
- header("location: /exchangecity/proyectosena/includes/misPublicaciones.php");
+ header("location: /Includes/misPublicaciones.php");
  $_SESSION["pub_actualizada"]="Los datos de la publicacion se  actualizaron Correctamente";
 }else{
     echo"".mysqli_error($db);
