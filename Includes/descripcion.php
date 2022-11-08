@@ -1,8 +1,8 @@
 <?php 
-include_once "/wamp64/www/Exchangecity/proyectoSena/funciones/conexionDB.php";
-include_once "/wamp64/www/exchangecity/proyectoSena/Includes/header.php";
-include_once "/wamp64/www/exchangecity/proyectoSena/Includes/menulateral.php";
-include_once "/wamp64/www/exchangecity/proyectoSena/funciones/masFunciones.php";
+include_once "/app/funciones/conexionDB.php";
+include_once "/app/Includes/header.php";
+include_once "/app/Includes/menulateral.php";
+include_once "/app/funciones/masFunciones.php";
 
 ?>
 
@@ -78,18 +78,18 @@ include_once "/wamp64/www/exchangecity/proyectoSena/funciones/masFunciones.php";
         </div>
         <div class="galeriaPrincipal">
             <div class="galeriaInterna">
-                <img src="/exchangecity/PROYECTOSENA/imagenes/conteiner/consola.jfif" alt="" id="imagenActiva">
+                <img src="/imagenes/conteiner/consola.jfif" alt="" id="imagenActiva">
                 <button class="btnCerrar">X</button>
                 <!-- <button class="btnAtras">&Lt;</button>
                 <button class="btnAdelante">&GT;</button> -->
             </div>
         </div>
-        <script src="/exchangecity/PROYECTOSENA/js/descricion.js"></script>
+        <script src="/js/descricion.js"></script>
     </section>
     </div>
     <section>
      <img src="" alt="">
-     <?php include_once "/wamp64/www/Exchangecity/proyectoSena/Includes/acount.php" ?>
+     <?php include_once "/app/Includes/acount.php" ?>
     </section>
   </section>
   <!--limpiamos los flotados del aside -->
@@ -97,6 +97,6 @@ include_once "/wamp64/www/exchangecity/proyectoSena/funciones/masFunciones.php";
  
 
 <?php
-include_once "/wamp64/www/exchangecity/proyectoSena/Includes/footer.php";
+include_once "/app/Includes/footer.php";
 ?>
 
