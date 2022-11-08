@@ -94,11 +94,12 @@ if($error==0){
     '$conversion_img2','$conversion_img3','$conversion_img4','$interesesPub','$id',
     '$categoriaIdPub','$estadoPub');" ;
     if(mysqli_query($db,$sql1)){
-        header("location: /index.php");
+       header("location: /index.php");
     }else{
         echo "no se inserto".mysqli_error($db);
     }
-}else{header("location: /Includes/publicarProducto.php");
+ }else{
+  header("location: /Includes/publicarProducto.php");
 }
 ?>
 
