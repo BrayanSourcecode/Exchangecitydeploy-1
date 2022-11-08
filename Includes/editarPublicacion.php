@@ -16,7 +16,7 @@ include_once "/app/funciones/masFunciones.php";
         <?php $detallesPublicacion=ConsultarDescripcionPublicacion($db,$_REQUEST["pub_codigo"]);
             $infoPublicacion=mysqli_fetch_assoc($detallesPublicacion);
         ?>
-    <form class="publicarProductos" action="backend/publicacionEditar.php?pub_codigo=<?php echo $_REQUEST["pub_codigo"];?>" enctype="multipart/form-data" method="POST">
+    <form class="publicarProductos" action="/backend/publicacionEditar.php?pub_codigo=<?php echo $_REQUEST["pub_codigo"];?>" enctype="multipart/form-data" method="POST">
                 <label for="tituloPublicacion">titulo</label>
                 <input  class="inputPublicar inputLogin" type="text" name="tituloPublicacion" value="<?php echo $infoPublicacion["pub_titulo"] ?>">
                 <label for="idPub">Id De La Publicaion</label>
