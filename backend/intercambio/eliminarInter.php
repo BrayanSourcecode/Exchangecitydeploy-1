@@ -1,5 +1,5 @@
 <?php 
-include_once "/wamp64/www/Exchangecity/proyectoSena/funciones/conexionDB.php";
+include_once "/app/funciones/conexionDB.php";
 
  echo $inter_codigo=$_REQUEST["int_codigo"] ;
 $sql2="DELETE FROM intercambio WHERE int_codigo='$inter_codigo'";
