@@ -1,8 +1,8 @@
 <?php 
-include_once "/wamp64/www/Exchangecity/proyectoSena/funciones/conexionDB.php";
-include_once "/wamp64/www/exchangecity/proyectoSena/Includes/header.php";
-include_once "/wamp64/www/exchangecity/proyectoSena/Includes/menulateral.php";
-include_once "/wamp64/www/Exchangecity/proyectoSena/funciones/masFunciones.php";
+include_once "/app/funciones/conexionDB.php";
+include_once "/app/Includes/header.php";
+include_once "/app/Includes/menulateral.php";
+include_once "/app/funciones/masFunciones.php";
 
 ?>
 
@@ -36,13 +36,13 @@ include_once "/wamp64/www/Exchangecity/proyectoSena/funciones/masFunciones.php";
                         </div>
                     </div>
                    
-                    <a class="editar" href="/exchangecity/proyectoSena/Includes/editarPublicacion.php?pub_codigo=<?php echo $publicacionUsuario["pub_codigo"] ?>">Editar</a>
+                    <a class="editar" href="/Includes/editarPublicacion.php?pub_codigo=<?php echo $publicacionUsuario["pub_codigo"] ?>">Editar</a>
                    
                 </div>
                
         <?php endwhile; ?> 
-        <script src="/exchangecity/PROYECTOSENA/js/editarPublicacion.js"></script>
-        <?php include_once "/wamp64/www/Exchangecity/proyectoSena/Includes/acount.php" ?>
+        <script src="/js/editarPublicacion.js"></script>
+        <?php include_once "/app/Includes/acount.php" ?>
     </section>
   </section>
   <!--limpiamos los flotados del aside -->
@@ -50,7 +50,7 @@ include_once "/wamp64/www/Exchangecity/proyectoSena/funciones/masFunciones.php";
 
  
   <?php 
-  include_once "/wamp64/www/exchangecity/proyectoSena/Includes/footer.php";
+  include_once "/app/Includes/footer.php";
   unset($_SESSION["publicacion_eliminada"]);
   
   
