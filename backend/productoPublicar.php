@@ -84,7 +84,7 @@ if($verificado=mysqli_fetch_assoc($consultaFun)){
            
 }else{
 $_SESSION["noVerificado"]="Por Favor Verificarse Gracias";
-header("location:/Includes/publicarProducto.php");
+  header("location:/Includes/publicarProducto.php");
 $error+=1;
 }
 //se comprueba que no hallan errores para guardar la publicacion
@@ -94,13 +94,13 @@ if($error==0){
     '$conversion_img2','$conversion_img3','$conversion_img4','$interesesPub','$id',
     '$categoriaIdPub','$estadoPub');" ;
     if(mysqli_query($db,$sql1)){
-        echo "se inserto correctamente";
-        header("location:/exchangecity/proyectosena/index.php");
+   
+        header("location: /index.php");
     }else{
         echo "no se inserto".mysqli_error($db);
     }
 }else{
-    header("location:/Includes/publicarProducto.php");
+     header("location:/Includes/publicarProducto.php");
     
 }
 
