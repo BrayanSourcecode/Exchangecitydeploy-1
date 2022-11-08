@@ -25,10 +25,8 @@ if($verificado=mysqli_fetch_assoc($consultaFun)){
         if($categoriaIdPub=="TV"){
             $categoriaIdPub=5;
         }elseif ($categoriaIdPub=="Movil"){
-        
             $categoriaIdPub=2;
         }elseif($categoriaIdPub=="Pc"){
-        
             $categoriaIdPub=3;
         }elseif($categoriaIdPub=="Consolas"){
             $categoriaIdPub=4;    
@@ -40,7 +38,6 @@ if($verificado=mysqli_fetch_assoc($consultaFun)){
     }
     /*se crea un if para saber el estado del producto */
     if($estadoPub){
-        
         if($estadoPub=="Nuevo"){
             $estadoPub=1;
         }elseif ($estadoPub=="Usado"){   
@@ -49,7 +46,6 @@ if($verificado=mysqli_fetch_assoc($consultaFun)){
     }else{
         $_SESSION["error_Estado"]="no seleciono el estado del producto";
         $error+=1;
-       
     }   
         /* se valida que se reciban todas las imagenes */
     if($fotoPrincipal && $imagen1 && $imagen2 && $imagen3 && $imagen4 ){
@@ -96,7 +92,7 @@ if($error==0){
     if(mysqli_query($db,$sql1)){
        header("location: /index.php");
     }else{
-        echo "no se inserto".mysqli_error($db);
+//         echo "no se inserto".mysqli_error($db);
     }
  }else{
   header("location: /Includes/publicarProducto.php");
