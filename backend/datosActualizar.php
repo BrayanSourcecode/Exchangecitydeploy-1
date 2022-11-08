@@ -37,7 +37,7 @@
         $_SESSION["login_correcto"]["usu_contacto"]=$contacto;
         $_SESSION["login_correcto"]["usu_descripcion"]=$descripcion;
         $_SESSION["login_correcto"]["usu_red_social"]=$redSocial;
-            header("location:/exchangecity/proyectosena/includes/datosusuario.php");
+            header("location:/Includes/datosusuario.php");
     }else{
         $_SESSION["actualizacion_fallo"]="la actualizacion fallo intentalo de nuevo";
         header("location:/Includes/datosusuario.php");
