@@ -79,8 +79,8 @@ include_once "/app/funciones/masFunciones.php";
                 </div>
                 <div class="actualizarDatos">
                       <input class="actualizarDatos" type="submit" value="Actualizar"> 
-                      <a class="botonVer actualizarDatos"  href="/exchangecity/proyectoSena/Includes/verificacion.php">Validar</a>   
-                      <a class="botonVer actualizarDatos"  href="/exchangecity/proyectoSena/Includes/eliminarCuenta.php?usu_codigo=<?php echo $_SESSION["login_correcto"]["usu_codigo"]?>">Eliminar Cuenta</a>        
+                      <a class="botonVer actualizarDatos"  href="/Includes/verificacion.php">Validar</a>   
+                      <a class="botonVer actualizarDatos"  href="/Includes/eliminarCuenta.php?usu_codigo=<?php echo $_SESSION["login_correcto"]["usu_codigo"]?>">Eliminar Cuenta</a>        
                 </div>      
           </div>
       </div>
