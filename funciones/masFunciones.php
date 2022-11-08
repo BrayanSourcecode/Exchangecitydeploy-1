@@ -190,9 +190,6 @@ function CodigoUsuarioProveedor($db,$cod_usuario){
        
     }
 }
-
-
-
 ?>
 
 
