@@ -49,7 +49,7 @@
     }
     //si hay errores los mostramos si no hay mostramos la seccion en el index
 if(!$error==0){
-    header("location: /app/includes/login.php");
+    header("location: /Includes/login.php");
 }else{
   header("location: /index.php");
 }
