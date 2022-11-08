@@ -1,7 +1,7 @@
 <?php 
 
-include_once "/wamp64/www/Exchangecity/proyectoSena/funciones/conexionDB.php";
-include_once "/wamp64/www/Exchangecity/proyectoSena/funciones/masFunciones.php";
+include_once "/app/funciones/conexionDB.php";
+include_once "/app/funciones/masFunciones.php";
 $cod_usuario_implicado= isset($_POST["cod_usuario"]) ?$_POST["cod_usuario"] :false;
 $cod_propietario= isset($_POST["cod_propietario"]) ?$_POST["cod_propietario"] :false;
 $cod_publicacion= isset($_POST["cod_publicacion"]) ?$_POST["cod_publicacion"] :false;
@@ -98,7 +98,7 @@ if($imagen1 && $imagen2 && $imagen3 && $imagen4 && $imagen5 && $imagen6 ){
     $conversion_img6=addslashes($conversion_img6);
 }else{
     $_SESSION["errorImagen"]="por favor lleno todos los campos de imagen";
-    header("location:/exchangecity/proyectoSena/Includes/intercambio/crearIntercambio.php");
+    header("location: /Includes/intercambio/crearIntercambio.php");
     $error+=1;       
 }
    
@@ -110,13 +110,13 @@ if(count($error)==0 && $existePub==true){
     if($crear_intercambio){
         $_SESSION["intercambio_creado_mensaje"]="el intercambio se creo correctamente puede consultar el proceso en opciones";
         $_SESSION["intercambio_creado"]="intercambio Creado";
-        header("location:/exchangecity/proyectoSena/Includes/intercambio/2Intercambio.php");
+        header("location: /Includes/intercambio/2Intercambio.php");
     }else{
         $_SESSION["intercambio_not_creado"]="el intercambio no se creo correctamente ";
         echo "no se creo el intercambio". mysqli_error($db);
     }
 }else{
-    header("location:/exchangecity/proyectoSena/Includes/intercambio/crearIntercambio.php");
+    header("location: /Includes/intercambio/crearIntercambio.php");
 }
 
 ?>
