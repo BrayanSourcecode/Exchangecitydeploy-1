@@ -46,7 +46,7 @@ function ConsultarEstado($db){
     }
     return $datosEstado;
 }
-?>
+
 
 
 function ConsultarPublicaciones($db){
@@ -59,9 +59,9 @@ function ConsultarPublicaciones($db){
     }
     return $datosPublicacion;
 }
-?>
 
-<?php
+
+
 function ConsultarCategoriaPublicacion($db,$id_categoria){
     $sql="SELECT * FROM categoria  WHERE cat_codigo='$id_categoria'";
 
