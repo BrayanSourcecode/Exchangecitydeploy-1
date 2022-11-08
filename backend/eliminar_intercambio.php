@@ -1,11 +1,11 @@
 <?php 
-include_once "/wamp64/www/Exchangecity/proyectoSena/funciones/conexionDB.php";
+include_once "/app/funciones/conexionDB.php";
 
 $int_codigo=$_REQUEST["int_codigo"] ;
 echo $int_codigo;
 $sql2="DELETE FROM intercambio WHERE int_codigo ='$int_codigo'";
 if(mysqli_query($db,$sql2)){
-    header("location: ./index.php");
+    header("location: /index.php");
     $_SESSION["intercambio_eliminado"]="El intercambio se elimino correctamente";
 }else{
         echo "error".mysqli_error($db) ;
@@ -21,7 +21,7 @@ if(mysqli_query($db,$sql2)){
 
 // if(mysqli_query($db,$sql1)){
 //     $_SESSION["login_correcto"]=session_destroy();
-//     header("location: /exchangecity/proyectosena/index.php");
+//     header("location: /index.php");
 // }else{
 //         echo "error".mysqli_error($db) ;
 // }
