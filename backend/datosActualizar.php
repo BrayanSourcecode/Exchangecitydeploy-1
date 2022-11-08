@@ -1,5 +1,5 @@
 <?php
-    include_once("/wamp64/www/Exchangecity/proyectoSena/funciones/conexionDB.php");
+    include_once("/app/funciones/conexionDB.php");
     
      //se saca el id del usuario para comprovar la actualizacion de datos
     $id=$_SESSION["login_correcto"]["usu_codigo"];
@@ -65,10 +65,10 @@
             if($insetar1){
                 $_SESSION["imagen_correcta"]="la imagen se actualizo por favor haga login nuevamente para visualizar la imagen";
                 $_SESSION["login_correcto"]["usu_img_perfil"]=$conversion;
-                header("location: /exchangecity/proyectosena/includes/datosusuario.php");
+                header("location: /Includes/datosusuario.php");
             }else{
                 $_SESSION["imagen_fallo"]="La imagen no se actualizo";
-                header("location: /exchangecity/proyectosena/includes/datosusuario.php");
+                header("location: /Includes/datosusuario.php");
             }
 
         }
@@ -92,10 +92,10 @@
         if($insetar2){
             $_SESSION["tipo_correcto"]="la ciudad se actualizo correctamente";
             $_SESSION["login_correcto"]["FK_ciu_codigo_uc"]=$ciudad;
-            header("location:/exchangecity/proyectosena/includes/datosusuario.php");
+            header("location:/Includes/datosusuario.php");
         }else{
             $_SESSION["tipo_fallo"]="la imagen se actualizo correctamente";
-            header("location:/exchangecity/proyectosena/includes/datosusuario.php");
+            header("location:/Includes/datosusuario.php");
         }
 
   }
