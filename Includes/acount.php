@@ -18,7 +18,7 @@ if(isset($_SESSION["usuario"])):?>
         
       <?php endif;?>
       
-      <?php if($tres==false || $cuatro==false):?>
+      <?php if($tres==false && $cuatro==false):?>
           <a href="/Includes/intercambio/2Intercambio.php">Opciones Intercambio</a>
         <?php endif;?>
     </div>
