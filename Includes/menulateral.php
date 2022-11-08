@@ -33,7 +33,7 @@
     </div>   
     <?php if(isset($_SESSION["login_correcto"])):  ?>
     <div class="acount_button icono">
-      <button class="bottom menuObjeto"><img class="menuIcono" src="\imagenes\navegacion\people_outline_white_24dp.svg" alt="">
+      <button class="bottom menuObjeto"><img class="menuIcono" src="\imagenes\Navegacion\people_outline_white_24dp.svg" alt="">
       </button>
     </div>
      <?php endif?>
