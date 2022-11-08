@@ -3,7 +3,7 @@
     $id=$_SESSION["login_correcto"]["usu_codigo"];
     $imgCedula= isset ($_FILES["imagenCedula"]["tmp_name"]) ? $_FILES["imagenCedula"]["tmp_name"]:false;
     $imgDireccion= isset ($_FILES["imagenDireccion"]["tmp_name"]) ? $_FILES["imagenDireccion"]["tmp_name"]:false;
-     var_dump($imgCedula);
+     
 
     if($imgCedula && $imgDireccion){
        
@@ -23,7 +23,7 @@
 
        if (mysqli_query($db,$add_verificacion)){
           echo "se inserto en la base de datos";
-          header("location:/exchangecity/proyectosena/includes/datosusuario.php");
+          header("location:/Includes/datosusuario.php");
        }else{
          echo "mensaje: " .mysqli_error($db);
        }
