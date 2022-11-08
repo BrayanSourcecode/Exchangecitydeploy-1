@@ -1,8 +1,8 @@
 <?php 
-include_once "/wamp64/www/Exchangecity/proyectoSena/funciones/conexionDB.php";
-include_once "/wamp64/www/exchangecity/proyectoSena/Includes/header.php";
-include_once "/wamp64/www/exchangecity/proyectoSena/Includes/menulateral.php";
-include_once "/wamp64/www/Exchangecity/proyectoSena/funciones/masFunciones.php";
+include_once "/app/funciones/conexionDB.php";
+include_once "/app/proyectoSena/Includes/header.php";
+include_once "/app/proyectoSena/Includes/menulateral.php";
+include_once "/app/proyectoSena/funciones/masFunciones.php";
 
 $tipoCat=$_REQUEST["tipo"];
 ?>
@@ -50,18 +50,8 @@ $tipoCat=$_REQUEST["tipo"];
 
 
       <?php  isset($_SESSION["error"]["nombre"]) ? "<div class='prueba'>".$_SESSION["error"]["nombre"]."</div>":"";?>
-      <!-- paginacion -->
-      <!-- <div class="contenidoPaginacion">
-        <div class="paginas">
-          <a class="pagi index" href="/PROYECTOSENA/index.php">Pagina Inicio ...</a>
-          <a class="pagi" href="/PROYECTOSENA/paginacion/paginacion1.php">1</a>
-          <a class="pagi" href="/PROYECTOSENA/paginacion/paginacion2.php">2</a>
-          <a class="pagi" href="/PROYECTOSENA/paginacion/paginacion3.php">3</a>
-          <a class="pagi" href="/PROYECTOSENA/paginacion/paginacion4.php">4</a>
-          <a class="pagi"href="/PROYECTOSENA/paginacion/paginacion5.php">5</a>
-      </div>
-    </div> -->
-  <?php include_once "/wamp64/www/Exchangecity/proyectoSena/Includes/acount.php" ?>
+   
+  <?php include_once "/app/Includes/acount.php" ?>
     </section>
   </section>
   <!--limpiamos los flotados del aside -->
@@ -76,6 +66,6 @@ $tipoCat=$_REQUEST["tipo"];
 
 
 <?php 
-  include_once "/wamp64/www/exchangecity/proyectoSena/Includes/footer.php";
+  include_once "/app/proyectoSena/Includes/footer.php";
   
 ?>
