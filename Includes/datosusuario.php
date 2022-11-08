@@ -1,8 +1,8 @@
 <?php
-include_once "/wamp64/www/Exchangecity/proyectoSena/funciones/conexionDB.php";
-include_once "/wamp64/www/exchangecity/proyectoSena/Includes/header.php";
-include_once "/wamp64/www/exchangecity/proyectoSena/Includes/menulateral.php";
-include_once "/wamp64/www/exchangecity/proyectoSena/funciones/masFunciones.php";
+include_once "/app/funciones/conexionDB.php";
+include_once "/app/Includes/header.php";
+include_once "/app/Includes/menulateral.php";
+include_once "/app/funciones/masFunciones.php";
 ?>
   <!--contenido de la pagina o aside-->
 
@@ -11,7 +11,7 @@ include_once "/wamp64/www/exchangecity/proyectoSena/funciones/masFunciones.php";
         <h1>Perfil de los datos</h1>
     </div>
     <section >
-    <form class="formDatos"  action="/exchangecity/proyectoSena/backend/datosActualizar.php"  enctype="multipart/form-data" method="POST">
+    <form class="formDatos"  action="/backend/datosActualizar.php"  enctype="multipart/form-data" method="POST">
       <div class="datosConjunto">
           <div class="datos">
               <div class="datoImagen">
@@ -85,11 +85,11 @@ include_once "/wamp64/www/exchangecity/proyectoSena/funciones/masFunciones.php";
           </div>
       </div>
     </form>
-    <?php include_once "/wamp64/www/Exchangecity/proyectoSena/Includes/acount.php" ?>
+    <?php include_once "/app/proyectoSena/Includes/acount.php" ?>
     </section>
   </section>
   <?php
-  include_once "/wamp64/www/exchangecity/proyectoSena/includes/footer.php";
+  include_once "/app/Includes/footer.php";
   ?>
   <!--limpiamos los flotados del aside -->
   <div style="clear: both"></div>
