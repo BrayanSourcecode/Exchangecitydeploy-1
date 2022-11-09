@@ -29,7 +29,7 @@ if(isset($_SESSION["usuario"])):?>
 <?php 
 if(isset($_SESSION["usuario_administrador"])):?>
 <div class="acount">
-      <a href="/Includes/administrador/crudUsuarios">Datos Usuarios</a>
+      <a href="/Includes/administrador/crudUsuarios.php">Datos Usuarios</a>
       <a href="/Includes/administrador/crudPublicacion.php">Datos Publicaciones</a>
       <a href="/Includes/administrador/crudVerificado.php">Verificicacion</a>
       <a href="/Includes/administrador/crudAdministrador.php">Administradores</a>
