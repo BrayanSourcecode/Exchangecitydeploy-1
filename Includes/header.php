@@ -36,7 +36,7 @@
     </div>
     <div class="iniciarSesion">
     
-      <input class="buscador" type="text" value="Buscar"/> 
+      
       <?php  if(isset($_SESSION["usuario"])):?>
           <div class="bienvenido">
               <h3>Bienvenido  <?php echo $_SESSION["usuario"]["usu_nombre"] ." ".$_SESSION["usuario"]["usu_apellido"]?></h3>
