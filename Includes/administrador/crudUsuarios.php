@@ -1,8 +1,8 @@
 <?php
-include_once "/wamp64/www/Exchangecity/proyectoSena/funciones/conexionDB.php";
-include_once "/wamp64/www/exchangecity/proyectoSena/Includes/header.php";
-include_once "/wamp64/www/exchangecity/proyectoSena/Includes/menulateral.php";
-include_once "/wamp64/www/exchangecity/proyectoSena/funciones/masFunciones.php";
+include_once "/app/funciones/conexionDB.php";
+include_once "/app/Includes/header.php";
+include_once "/app/Includes/menulateral.php";
+include_once "/app/funciones/masFunciones.php";
 ?>
 <?php 
 $sql="SELECT usu_codigo,usu_nombre,usu_apellido,usu_correo,usu_documento,
@@ -45,7 +45,7 @@ $consulta=mysqli_query($db,$sql);
                 <th class="datoCrudUsu"><?php echo $row["usu_documento"] ?></th>
                 <th class="datoCrudUsu"><?php echo $row["FK_rol_codigo_ur"] ?></th>
                 <th class="datoCrudUsu"><?php echo $row["FK_ciu_codigo_uc"] ?></th>
-                <th class="datoCrudUsu"><a class="crudBoton" href="/exchangecity/proyectoSena/backend/administrador/eliminarUsuCrud.php?usu_codigo=<?php echo $row["usu_codigo"] ?>">Eliminar</a></th>
+                <th class="datoCrudUsu"><a class="crudBoton" href="/backend/administrador/eliminarUsuCrud.php?usu_codigo=<?php echo $row["usu_codigo"] ?>">Eliminar</a></th>
                 
             </tr>
             <?php endwhile;?>
@@ -54,11 +54,11 @@ $consulta=mysqli_query($db,$sql);
         </div>
         
     
-    <?php include_once "/wamp64/www/Exchangecity/proyectoSena/Includes/acount.php" ?>
+    <?php include_once "/app/Includes/acount.php" ?>
     </section>
   </section>
   <?php
-  include_once "/wamp64/www/exchangecity/proyectoSena/includes/footer.php";
+  include_once "/app/includes/footer.php";
   ?>
   <!--limpiamos los flotados del aside -->
   <div style="clear: both"></div>
