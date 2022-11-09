@@ -5,7 +5,7 @@ include_once "/app/funciones/conexionDB.php";
 $usuario=$_REQUEST["usu_codigo"] ;
 $sql2="DELETE FROM publicacion WHERE FK_dat_codigo_pd_usu ='$usuario'";
 if(mysqli_query($db,$sql2)){
-    echo"se eliminopublicaion";
+    
 }else{
         echo "error".mysqli_error($db) ;
 }
