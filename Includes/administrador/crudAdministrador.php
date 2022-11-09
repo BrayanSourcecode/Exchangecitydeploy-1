@@ -44,7 +44,7 @@ $consulta=mysqli_query($db,$sql);
                 <th class="datoCrudUsu"><?php echo $row["usu_documento"] ?></th>
                 <th class="datoCrudUsu"><?php echo $row["FK_rol_codigo_ur"] ?></th>
                 <th class="datoCrudUsu"><?php echo $row["FK_ciu_codigo_uc"] ?></th>
-                <th class="datoCrudUsu"><a class="crudBoton" href="/backen/administrador/administradorCrud.php?usu_codigo=<?php echo $row["usu_codigo"]?>">Eliminar</a></th>
+                <th class="datoCrudUsu"><a class="crudBoton" href="/backend/administrador/administradorCrud.php?usu_codigo=<?php echo $row["usu_codigo"]?>">Eliminar</a></th>
                 
             </tr>
             <?php endwhile;?>
