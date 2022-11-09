@@ -1,5 +1,5 @@
 <?php
-     include_once("/wamp64/www/Exchangecity/proyectoSena/funciones/conexionDB.php");
+     include_once("/app/funciones/conexionDB.php");
 
      $usuario=$_REQUEST["usu_codigo"] ;
 
@@ -7,7 +7,7 @@
 
 if(mysqli_query($db,$sql1)){
    
-    header("location: /exchangecity/proyectosena/includes/administrador/crudAdministrador.php");
+    header("location: /Includes/administrador/crudAdministrador.php");
     $_SESSION["eliminar_adm"]="Se elimino el administrador de la base de datos";
     
 }else{
