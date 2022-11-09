@@ -1,8 +1,8 @@
 <?php
-include_once "/wamp64/www/Exchangecity/proyectoSena/funciones/conexionDB.php";
-include_once "/wamp64/www/exchangecity/proyectoSena/Includes/header.php";
-include_once "/wamp64/www/exchangecity/proyectoSena/Includes/menulateral.php";
-include_once "/wamp64/www/exchangecity/proyectoSena/funciones/masFunciones.php";
+include_once "/app/funciones/conexionDB.php";
+include_once "/app/Includes/header.php";
+include_once "/app/Includes/menulateral.php";
+include_once "/app/funciones/masFunciones.php";
 ?>
 <?php 
 $sql="SELECT pub_codigo,pub_titulo,pub_descripcion,pub_intereses,FK_dat_codigo_pd_usu,
@@ -56,7 +56,7 @@ $consulta=mysqli_query($db,$sql);
                 <th class="datoCrudUsu"><img class="img_editar" src="data:image/JPG;base64,<?php echo base64_encode($row["pub_img2"]);?>" /></</th>
                 <th class="datoCrudUsu"><img class="img_editar" src="data:image/JPG;base64,<?php echo base64_encode($row["pub_img3"]);?>" /></</th>
                 <th class="datoCrudUsu"><img class="img_editar" src="data:image/JPG;base64,<?php echo base64_encode($row["pub_img4"]);?>" /></</th>
-                <th class="datoCrudUsu"><a class="crudBoton" href="/exchangecity/proyectoSena/backend/administrador/eliminarPubCrud.php?pub_codigo=<?php echo $row["pub_codigo"] ?>">Eliminar</a></th>
+                <th class="datoCrudUsu"><a class="crudBoton" href="/backend/administrador/eliminarPubCrud.php?pub_codigo=<?php echo $row["pub_codigo"] ?>">Eliminar</a></th>
                 
             </tr>
             <?php endwhile;?>
@@ -65,11 +65,11 @@ $consulta=mysqli_query($db,$sql);
         </div>
         
     
-    <?php include_once "/wamp64/www/Exchangecity/proyectoSena/Includes/acount.php" ?>
+    <?php include_once "/app/Includes/acount.php" ?>
     </section>
   </section>
   <?php
-  include_once "/wamp64/www/exchangecity/proyectoSena/includes/footer.php";
+  include_once "/app/includes/footer.php";
   ?>
   <!--limpiamos los flotados del aside -->
   <div style="clear: both"></div>
