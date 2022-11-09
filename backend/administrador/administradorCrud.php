@@ -7,8 +7,9 @@
 
 if(mysqli_query($db,$sql1)){
    
-    header("location: /Includes/administrador/crudAdministrador.php");
+    header("location: /index.php");
     $_SESSION["eliminar_adm"]="Se elimino el administrador de la base de datos";
+     $_SESSION["usuario_administrador"]=session_destroy();
     
 }else{
         echo "error".mysqli_error($db);
