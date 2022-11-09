@@ -1,6 +1,6 @@
 <?php 
 
-include_once "/wamp64/www/Exchangecity/proyectoSena/funciones/conexionDB.php";
+include_once "/app/funciones/conexionDB.php";
 
 
 
@@ -15,7 +15,7 @@ if(mysqli_query($db,$sql2)){
 $sql="DELETE FROM datos_verificado WHERE FK_dat_codigo_du ='$usuario'";
 if(mysqli_query($db,$sql)){
     echo"se elimino de datos";
-    header("location: /exchangecity/proyectosena/includes/administrador/crudVerificado.php");
+    header("location: /Includes/administrador/crudVerificado.php");
     $_SESSION["eliminar_ver"]="El verificado del usuario se elimino correctamente";
 }else{
         echo "error".mysqli_error($db) ;
