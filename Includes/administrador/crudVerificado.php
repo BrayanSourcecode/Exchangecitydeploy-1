@@ -1,8 +1,8 @@
 <?php
-include_once "/wamp64/www/Exchangecity/proyectoSena/funciones/conexionDB.php";
-include_once "/wamp64/www/exchangecity/proyectoSena/Includes/header.php";
-include_once "/wamp64/www/exchangecity/proyectoSena/Includes/menulateral.php";
-include_once "/wamp64/www/exchangecity/proyectoSena/funciones/masFunciones.php";
+include_once "/app/funciones/conexionDB.php";
+include_once "/app/Includes/header.php";
+include_once "/app/Includes/menulateral.php";
+include_once "/app/funciones/masFunciones.php";
 ?>
 <?php 
 
@@ -39,7 +39,7 @@ $consulta=mysqli_query($db,$sql);
                 <th class="datoCrudUsu"><?php echo $row["FK_dat_codigo_du"] ?></th>
                 <th class="datoCrudUsu"> <img class="img_editar" src="data:image/JPG;base64,<?php echo base64_encode($row["dat_img_cedula"]);?>" /></th>
                 <th class="datoCrudUsu"><img class="img_editar" src="data:image/JPG;base64,<?php echo base64_encode($row["dat_direccion"]);?>" /></th>
-                <th class="datoCrudUsu"><a class="crudBoton" href="/exchangecity/proyectoSena/backend/administrador/verificadoCrud.php?usu_codigo=<?php echo $row["FK_dat_codigo_du"] ?>">Eliminar</a></th>
+                <th class="datoCrudUsu"><a class="crudBoton" href="/backend/administrador/verificadoCrud.php?usu_codigo=<?php echo $row["FK_dat_codigo_du"] ?>">Eliminar</a></th>
                 
             </tr>
             <?php endwhile;?>
@@ -48,11 +48,11 @@ $consulta=mysqli_query($db,$sql);
         </div>
         
     
-    <?php include_once "/wamp64/www/Exchangecity/proyectoSena/Includes/acount.php" ?>
+    <?php include_once "/app/Includes/acount.php" ?>
     </section>
   </section>
   <?php
-  include_once "/wamp64/www/exchangecity/proyectoSena/includes/footer.php";
+  include_once "/app/includes/footer.php";
   ?>
   <!--limpiamos los flotados del aside -->
   <div style="clear: both"></div>
