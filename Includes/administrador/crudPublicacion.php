@@ -69,7 +69,7 @@ $consulta=mysqli_query($db,$sql);
     </section>
   </section>
   <?php
-  include_once "/app/includes/footer.php";
+  include_once "/app/Includes/footer.php";
   ?>
   <!--limpiamos los flotados del aside -->
   <div style="clear: both"></div>
