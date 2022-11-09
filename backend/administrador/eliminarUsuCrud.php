@@ -12,7 +12,7 @@ if(mysqli_query($db,$sql2)){
 
 $sql="DELETE FROM datos_verificado WHERE FK_dat_codigo_du ='$usuario'";
 if(mysqli_query($db,$sql)){
-    echo"se elimino de datos";
+    
 }else{
         echo "error".mysqli_error($db) ;
 }
