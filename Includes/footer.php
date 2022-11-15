@@ -12,6 +12,9 @@
       <a href="mailto:brayanramirez4546@gmail.com">
         <img src="/imagenes/footer/vibrating-smartphone.svg" alt="no sale imagen" />
       </a>
+      <a href="/imagenes/manual/Post de Instagram Smartphone Celular Nuevo Promocion Elegante Moderno Negro.pdf">
+        <img src="/imagenes/Navegacion/svg/quiz_FILL0_wght400_GRAD0_opsz48.svg" alt="no sale imagen" />
+      </a>
     </div>
     <div class="copy">
       &copy; exchance city 2022
