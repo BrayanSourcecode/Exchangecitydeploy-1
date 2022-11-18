@@ -25,7 +25,7 @@ include_once "/app/funciones/masFunciones.php";
           <h3><?php echo $nombreCategoria["cat_tipo"];?></h3>
           <img src="data:image/JPG;base64,<?php echo base64_encode($publicacion["pub_img_general"]);?>" />
           <div class="conterCars">
-            <a href="/includes/descripcion.php?pub_codigo=<?php echo$publicacion["pub_codigo"] ?>"><h2><?php echo substr($publicacion["pub_titulo"],0,15);?></h2></a>
+            <a href="/Includes/descripcion.php?pub_codigo=<?php echo$publicacion["pub_codigo"] ?>"><h2><?php echo substr($publicacion["pub_titulo"],0,15);?></h2></a>
             <p><?php echo substr($publicacion["pub_descripcion"],0,30)."...";?></p>
             <?php  $estadoPublicacion= ConsultarEstadoPublicacion($db,$publicacion["FK_est_codigo_pe"]);
               $nombreEstado=mysqli_fetch_assoc($estadoPublicacion);
