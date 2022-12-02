@@ -6,7 +6,7 @@ include_once "/app/funciones/masFunciones.php";
 ?>
 <?php 
 $sql="SELECT usu_codigo,usu_nombre,usu_apellido,usu_correo,usu_documento,
-FK_rol_codigo_ur,FK_ciu_codigo_uc FROM usuario";
+FK_rol_codigo_ur,FK_ciu_codigo_uc FROM usuario WHERE FK_rol_codigo_ur='2'";
 
 $consulta=mysqli_query($db,$sql);
 
