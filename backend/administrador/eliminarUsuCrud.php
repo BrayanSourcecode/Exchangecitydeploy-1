@@ -11,7 +11,7 @@ if(mysqli_query($db,$sql2)){
 }
 $sql="DELETE FROM intercambio WHERE FK_dat_codigo_id_usu ='$usuario'";
 if(mysqli_query($db,$sql)){
-    echo"se elimino de datos";
+   
 }else{
         echo "error".mysqli_error($db) ;
 }
