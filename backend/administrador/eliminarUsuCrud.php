@@ -9,7 +9,12 @@ if(mysqli_query($db,$sql2)){
 }else{
         echo "error".mysqli_error($db) ;
 }
-
+$sql="DELETE FROM intercambio WHERE FK_dat_codigo_id_usu ='$usuario'";
+if(mysqli_query($db,$sql)){
+    echo"se elimino de datos";
+}else{
+        echo "error".mysqli_error($db) ;
+}
 $sql="DELETE FROM datos_verificado WHERE FK_dat_codigo_du ='$usuario'";
 if(mysqli_query($db,$sql)){
     
