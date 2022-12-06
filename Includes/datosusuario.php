@@ -34,7 +34,7 @@ include_once "/app/funciones/masFunciones.php";
                   <label class="labelDatos  datosPreguntas" for="correo">Correo Electronico</label>
                   <input class="inputDatos inputLogin" name="correo" value="<?php echo $_SESSION["login_correcto"]["usu_correo"] ?>"></input>
                   <label class="labelDatos  datosPreguntas" for="documento">Documento</label>
-                  <input class="inputDatos inputLogin" name="documento" value="<?php echo $_SESSION["login_correcto"]["usu_documento"] ?>"></input>
+                  <input class="inputDatos inputLogin" type="number" name="documento" value="<?php echo $_SESSION["login_correcto"]["usu_documento"] ?>"></input>
 
                 </div>  
                 <div class="datosPagina">
@@ -72,7 +72,7 @@ include_once "/app/funciones/masFunciones.php";
                   <?php echo isset($_SESSION["tipo_correcto"]) ? "<div>".$_SESSION["tipo_correcto"]."</div>":"";?>
                   <?php echo isset($_SESSION["tipo_fallo"]) ? "<div>".$_SESSION["tipo_fallo"]."</div>":"";?>
                   <label class="labelDatos  datosPreguntas" name="contacto" >whatsapp</label>  
-                  <input class="inputDatos inputLogin" type="text" name="contacto" value="<?php echo $_SESSION["login_correcto"]["usu_contacto"] ?>"> 
+                  <input class="inputDatos inputLogin" type="number" name="contacto" value="<?php echo $_SESSION["login_correcto"]["usu_contacto"] ?>"> 
                   <label class="labelDatos  datosPreguntas" for="redSocial" >red social</label> 
                   <input class="inputDatos inputLogin" type="text" name="redSocial" value="<?php echo $_SESSION["login_correcto"]["usu_red_social"] ?>">
                   
