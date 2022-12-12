@@ -15,10 +15,8 @@ if(mysqli_query($db,$sql)){
     header("location: /Includes/administrador/crudVerificado.php");
     $_SESSION["eliminar_ver"]="El verificado del usuario se elimino correctamente";
 }else{
-        echo "error".mysqli_error($db);
+    echo "error".mysqli_error($db);
         
 }
-
-
 
 ?>
