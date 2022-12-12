@@ -165,8 +165,6 @@ function IntercambioUsuarioProveedor($db,$cod_usuario){
 
     if(isset($existeInter)){
         return $existeInter;
-    }else{
-       
     }
 }
 
