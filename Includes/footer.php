@@ -12,7 +12,7 @@
       <a href="mailto:brayanramirez4546@gmail.com">
         <img src="/imagenes/footer/vibrating-smartphone.svg" alt="no sale imagen" />
       </a>
-      <a href="/imagenes/manual/Manual De Usuario exhchangecityterminado.docx">
+      <a href="/imagenes/manual/Manual De Usuario exhchangecityterminado.pdf">
         <img src="/imagenes/Navegacion/svg/quiz_FILL0_wght400_GRAD0_opsz48.svg" alt="no sale imagen" />
       </a>
     </div>
