@@ -3,18 +3,12 @@ include_once "/app/funciones/conexionDB.php";
 include_once "/app/Includes/header.php";
 include_once "/app/Includes/menulateral.php";
 include_once "/app/funciones/masFunciones.php";
-?>
-<?php 
-
 
 $sql="SELECT * FROM datos_verificado";
 
 $consulta=mysqli_query($db,$sql);
 
-
 ?>
-
-
 
   <!--contenido de la pagina o aside-->
 
